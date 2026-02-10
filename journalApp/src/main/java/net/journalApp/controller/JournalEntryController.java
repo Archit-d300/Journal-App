@@ -23,12 +23,12 @@ public class JournalEntryController {
         return true;
     }
 
-    @GetMapping("id/{Id}")
+    @GetMapping("/id/{Id}")
     public JournalEntry getJournalEntryById(@PathVariable String Id){
         return journalEntries.get(Id);
     }
 
-    @DeleteMapping("id/{Id}")
+    @DeleteMapping("/id/{Id}")
     public JournalEntry deleteEntryById(@PathVariable String Id){
         return journalEntries.remove(Id);
     }
