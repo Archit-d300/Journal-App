@@ -2,6 +2,7 @@ package net.journalApp.entity;
 
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
