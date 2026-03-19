@@ -5,6 +5,8 @@ import net.journalApp.entity.User;
 import net.journalApp.service.JournalEntryService;
 import net.journalApp.service.UserService;
 import org.bson.types.ObjectId;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +26,7 @@ public class JournalEntryController {
 
     @Autowired
     private UserService userService;
+
 
     // Method inside Controller class should be public so that they can be accessed and invoked by spring framework.
     @GetMapping
